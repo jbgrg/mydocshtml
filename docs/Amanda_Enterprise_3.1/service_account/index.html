@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  
+  <link rel="shortcut icon" href="../../img/favicon.ico">
+  <title>Best Practices for Service Account Management (SAM) - My Docs</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
+
+  <link rel="stylesheet" href="../../css/theme.css" />
+  <link rel="stylesheet" href="../../css/theme_extra.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" />
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Best Practices for Service Account Management (SAM)";
+    var mkdocs_page_input_path = "Amanda_Enterprise_3.1\\service_account.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="../../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+        <a href="../.." class="icon icon-home"> My Docs</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../..">Home</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../about/">About</a>
+                    </li>
+                </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../..">My Docs</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../..">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>Best Practices for Service Account Management (SAM)</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="best-practices-for-service-account-management-sam">Best Practices for Service Account Management (SAM)</h1>
+<h4 id="a-service-account-is-often-described-as-an-account-that-does-not-correspond-to-an-actual-person">A service account is often described as an account that does not correspond to an actual person.</h4>
+<h2 id="service-account-management-best-practices">Service Account Management Best Practices</h2>
+<ul>
+<li><strong>Identity and maintain an up-to-date repository of all service accounts</strong> Create an authoritative source to maintain record of all service accounts. Discover service accounts and update the record.</li>
+<li><strong>Identifying owners for service accounts</strong> Identify and assign the owner to each service account for accountability.</li>
+<li><strong>Naming service account</strong> Consider names that are not completely obvious to the service,  for example &#39;admin&#39; would be helpful to administrators, but it is more helpful to attackers.</li>
+<li><strong>Apply the least privilege and segregation of duties (SoD) principles</strong> Assign the only minimum required privileges to service accounts. Start with the most restrictive permissions possible and build out from there. Separation of duties means no one user can perform all privileged actions on a given application or system.</li>
+<li><strong>Password Management</strong> Do not set accounts with password &quot;Never expires&quot; or use the same password for all the service accounts. Define a strategy for managing these passwords and changing them on a regular basis, as well as using unique passwords.</li>
+<li><strong>Manage the full life-cycle of service accounts</strong> Follow check in/check out process for securely sharing the password to privileged users and change password of service account after every use. Also, disable inactive service accounts.</li>
+<li><strong>Classification and risk analysis of each service account</strong> Define and classify service accounts. Map out what important applications, service or programs rely on it. Utilize the security risk assessment practices to identify the danger each privileged service account poses and focus on the riskiest ones</li>
+<li><strong>Auditing and Alerting of service account usage</strong> Keep informed about service account activities with extensive logging and monitoring techniques.</li>
+<li><strong>Access Review Certification for service accounts</strong> Review permissions attached to privileged service accounts periodically. Keep track of all the changes in detail.</li>
+<li><strong>Document service account management policies</strong> Make sure your policies and account classifications are well documented and approved by management. So, they can be clear and strictly enforced.</li>
+<li><strong>Educate your employees </strong> Provide continuous education to your staff about any change in service account management policies, processes, and classifications. Everyone in the organization should know how to manage and use their service account credentials. Security is everyone&#39;s responsibility and is most effective when everyone understands it.</li>
+</ul>
+<p><img alt="" src="../img/Foundby_Developer.jpg" /></p>
+<p><img alt="" src="../img/Foundby_Developer.jpg" /></p>
+<p><img alt="" src="../img/Betsol%20Jira%20Deployment%20Workflow.JPG" /></p>
+              
+            </div>
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="versions">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+      
+    </span>
+</div>
+    <script>var base_url = '../..';</script>
+    <script src="../../js/theme.js" defer></script>
+      <script src="../../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>
